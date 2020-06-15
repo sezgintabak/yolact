@@ -155,6 +155,19 @@ coco2017_testdev_dataset = dataset_base.copy({
     'label_map': COCO_LABEL_MAP
 })
 
+defected_materials_dataset = dataset_base.copy({
+'name': 'Defected Surfaces',
+          
+'train_info': './data/annotations.json',
+'train_images': './data',
+
+'valid_images': './data',
+'valid_info': './data/annotations.json',
+         
+'class_names': ('defected_materials'),
+'label_map': {1:1}
+}) 
+
 PASCAL_CLASSES = ("aeroplane", "bicycle", "bird", "boat", "bottle",
                   "bus", "car", "cat", "chair", "cow", "diningtable",
                   "dog", "horse", "motorbike", "person", "pottedplant",
